@@ -1,0 +1,316 @@
+@import url("../CSS/fonts.css");
+
+html,body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+:root{
+    --Abel:'Abel',cursive;
+    --Anton:'Anton',cursive;
+    --Lexend:'Lexend',cursive;
+
+    /**Colors*/
+    --text-gray:#3f4954
+    --text-light : #686666da;
+    --bg-color: #0f0f0f;
+    --white: #ffffff;
+    --midnight: #104f55;
+    /* gradient color   */
+    --sky: linear-gradient(120deg, #353941 100%, #111213 0%);
+
+
+}
+/*************Global classes **************/
+a{
+    text-decoration: none;
+    color: var(--text-gray);
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+ul{
+    list-style-type: none;
+}
+h1{
+    font-family: var(--Abel);
+    font-size: 2.5rem;
+    }
+
+h2{
+    font-family: var(--Lexend);
+  }
+
+h3{
+    font-family: var(--Anton);
+    font-size: 1.3rem;
+    }
+h4{
+    
+    background-color:transparent;
+     font-family: var(--Anton);
+     font-size: 1.3rem;
+}
+button.btn{
+    border: none;
+    display: inline-block;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: var(--Abel);
+    cursor: pointer;
+}
+span{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+    margin: 0 5vw;
+}
+/*******x******Global classes *********x*****/
+
+/****Nav Bar**************/
+.nav{
+    background:rgb(217, 228, 230);
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 10vh;
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; 
+    transition: height 1s ease-in-out;
+    }
+
+.nav .nav-brand a{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    display: block;
+    font-family: var(--Lexend);
+    font-size: 1.6rem;
+    color:black;
+}
+
+.nav .nav-menu{
+    justify-content:space-between;
+    
+  
+}
+.text-gray{
+    color: var(--text-gray);
+}
+p{
+    font-family: var(--Lexend);
+    
+    
+}
+.nav .nav-items{
+    color: rgb(8, 8, 8);
+    margin: 0;
+    display: flex;
+}
+.nav .nav-items .nav-link{
+    padding:1.6rem 1rem;
+    font-size: 1.1rem;
+    font-family: var(--Abel);
+    position: relative;}
+.nav .toggle-collapse{
+    position: absolute;
+    top: 0%;
+    width: 80%;
+    cursor: pointer;
+    display: none;
+}
+.nav .toggle-collapse .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons i{
+    font-size: 1.4rem;
+    color: var(--text-gray);
+}
+
+.collapse{
+    height: 40rem;
+}
+.nav .nav-items .nav-link:hover{
+    background-color: var(--midnight);
+}
+
+.nav .nav-items .nav-link:hover a{
+    color: var(--white);
+}
+.nav .social{
+    padding: 1.4rem 8rem;
+   
+}
+
+.nav .social i{
+    padding: .2rem .2rem;
+}
+
+.nav .social i:hover{
+    color: #13576b;
+}
+/****x*****Nav Bar****x*********/
+
+/******************Main Content**************/
+
+/******************Site Title*************/
+.main {
+    margin-top: 20px; /* Add a top margin to avoid content overlay */
+  }
+main .site-title{
+    background: url('../Assests/backg\ test.jpg');
+    background-size: auto;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+}
+main .site-title .site-background{
+    padding-top: 10rem;
+    text-align: center;
+    color:black;
+    
+}
+main .site-title h1,h3{
+    margin:.3rem;
+}
+main .site-title .btn{
+    border: none;
+    display: inline-block;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: var(--Abel);
+    cursor: pointer;
+    margin: 1.8rem;
+    background:var(--sky);
+    color: white;
+}
+main .site-title .btn:hover{
+
+     
+    border: 1px solid white;
+    background: transparent;
+    color:black;
+}
+/********x**********Site Title*******x******/
+/***********************Blog Carousel********************/
+main .courses{
+    background: url('../Assests/White\ wall.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100vp ;
+    width: 100%;
+
+}
+main .courses .blog-post{
+    padding-top: 1rem;
+}
+main .blog-post .blog-course1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    margin: 3rem 2rem;
+    background: rgb(223, 220, 215);
+    box-shadow: 0 15px 20px rgb(0,0,0,0.2);
+}
+
+main .blog-course1 .blog-title{
+    padding: 2rem 0;
+}
+main .blog-course1 .btn-blog{
+    padding: .7rem 2rem;
+    background: var(--sky);
+    margin: .5rem;
+    color: white;
+   
+    }
+main .blog-course1 span{
+    display: block;
+}
+main .container .owl-nav{
+        position: absolute;
+        top: 0%;
+        margin: 0 auto;
+        width: 100%;
+}
+main .blog-course1 .btn-blog:hover{
+
+     
+    border: black;
+    background: transparent;
+    color:black;
+}
+section .container .owl-nav{
+    position: absolute;
+    top: 0%;
+    margin: 0 auto;
+    width: 100%; 
+}
+.owl-nav .owl-next .owl-nav-next,.owl-nav .owl-prev .owl-nav-prev{
+    color: var(--text-gray);
+    background:transparent;
+    font-size: 2rem;
+}
+.owl-theme .owl-nav[class*='owl-']:hover{
+    background:transparent;
+    color:var(--midnight);
+}
+
+.owl-theme .owl-nav[class*='owl-']{
+    outline: none;
+}
+/*************x**********Blog Carousel**********x**********/
+/************x******Main Content*********x*****/
+
+/*              Viewport less then or equal to 1130px            */
+
+@media only screen and (max-width: 1130px){
+    .site-content .post-content > .post-image .post-info{
+        left: 2rem !important;
+        bottom: 1.2rem !important;
+        border-radius: 0% !important;
+    }
+
+    .site-content .sidebar .popular-post .post-info{
+        display: none !important;
+    }
+
+    footer.footer .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/*      x       Viewport less then or equal to 1130px    x     */
+
+
+/*              Viewport less then or equal to 750px            */
+
+@media only screen and (max-width: 750px){
+    .nav .nav-menu, .nav .nav-items{
+        flex-direction: column;
+    }
+
+    .nav .toggle-collapse{
+        display: initial;
+    }
+
+    main .site-content{
+        grid-template-columns: 100%;
+    }
+
+    footer.footer .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+
